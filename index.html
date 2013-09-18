@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>To Do List</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/todolist.css" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Asul:700' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="todolist.js"></script>
+</head>
+<body>
+	<header>
+		<h1>To - Do List</h1>
+	</header>
+			<div class="Form">
+				<input id="listInput" type="text">
+				<button id="addNote" onclick="addItem()">Add An Item</button>
+			</div>
+	<div class="Container">
+			<div class="list">
+				<div class="trashClosed">
+					<input type="image" src="trash-can3.png" id="trashCan" onclick="deleteItem()" alt="Trash" title="Delete It"> 
+				</div>
+				<!-- <div class="trashOpen"> -->
+					<!-- <img src="#"> -->
+				<!-- </div> -->
+				<ol id="listItems">
+
+				</ol>
+			</div>
+	</div>
+	<div class = "garbagePic">
+		
+	</div>
+</body>
+
+</html>
