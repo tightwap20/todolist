@@ -18,7 +18,7 @@ function addItem() {
 
 function deleteItem() {
 	var textItem = document.getElementsByName('item'); //grabbing the checkbox, name "item"
-	for (i=0; i<textItem.length; i++) //loop through the checkbox
+	for (i=textItem.length - 1; i>=0; i--) //loop through the checkbox
 		{
 		if(textItem[i].checked) //if it is checked
 			{
@@ -32,7 +32,19 @@ function deleteItem() {
 		else{
 
 		}
-	}
+	};
 
+function strikeThrough() {
+	var del = document.getElementsByName('item');
+	var delItem = document.getElementById('listVal');
+	if (del.checked === true) 
+		{
+		delItem.Style.setProperty("text-decoration", "line-through");
+		}
+	else {
+
+	}
+	return strikeThrough();
+}
 }
 
