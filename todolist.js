@@ -43,8 +43,7 @@ function strikeThrough() {
 		}
 	else {
 
+		}
 	}
-	return strikeThrough();
-}
 }
 
