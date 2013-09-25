@@ -18,7 +18,7 @@ function addItem() {
 
 function deleteItem() {
 	var textItem = document.getElementsByName('item'); //grabbing the checkbox, name "item"
-	for (i=textItem.length - 1; i>=0; i--) //loop through the checkbox
+	for (i=textItem.length - 1; i>=0; i--) //loop through the checkbox by starting with text item length decresed by 1, then loops until i is +or= to 0
 		{
 		if(textItem[i].checked) //if it is checked
 			{

@@ -11,9 +11,9 @@ header{
 }
 .Container{
 	background: url("../Images/postit2.gif");
-	width: 35%;
+	width: 440px;
 	margin: auto;
-	padding-bottom: 35%;
+	padding-bottom: 400px;
 	margin-top: 20px;
 	max-height: 35%;
 }
@@ -52,17 +52,24 @@ h1 {
 #listItems {
 	list-style: decimal;
 	padding-right: 200px;
+	font: sans-serif;
 }
 .trashClosed input {
 	position: absolute;
-	margin-left: 380px;
-	margin-top: 260px;
+	margin-left: 330px;
+	margin-top: 14%;
+}
+.trashClosed img {
+	position: absolute;
+	margin-left: 10%;
+	margin-top: -50px;
 }
 #listItems li{
 	display: block;
 	padding-right: 10px;
 	float: left;
 	clear: left;
+	font: sans-serif;
 }
 ol#listItems input{
 	float: left;
