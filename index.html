@@ -13,21 +13,24 @@
 	<header>
 		<h1>To - Do List</h1>
 	</header>
-			<div class="Form">
-				<input id="listInput" type="text">
-				<button id="addNote" onclick="addItem()">Add An Item</button>
-			</div>
+			
 	<div class="Container">
+		<div class="Form">
+			<input id="listInput" type="text" placeholder = "Hit the Gym!">
+			<button id="addNote" onclick="addItem()">ADD ITEMS</button>
+			<input type="button" value = "TRASH ITEMS" id="trashCan" onclick="deleteItem()" alt="Trash" title="Delete It"> 
+		</div>
 			<div class="list">
 				<div class="trashClosed">
 					<img src="thumbTack.png">
-					<input type="image" src="trash-can3.png" id="trashCan" onclick="deleteItem()" alt="Trash" title="Delete It"> 
 				</div>
-				<!-- <div class="trashOpen"> -->
-					<!-- <img src="#"> -->
-				<!-- </div> -->
+				<div>
+					<img class = "tackTwo" src="thumbTack.png">
+				</div>
+				<div>
+					<img class = "tackThree" src="thumbTack.png">
+				</div>
 				<ol id="listItems">
-
 				</ol>
 			</div>
 	</div>
