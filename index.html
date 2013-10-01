@@ -16,7 +16,7 @@
 			
 	<div class="Container">
 		<div class="Form">
-			<input id="listInput" type="text" placeholder = "Hit the Gym!">
+			<input id="listInput" type="text" placeholder = "Hit the Gym!" onKeydown= "Javascript: if (event.keyCode==13) addItem();"> <!-- onkeydown event selects javascript function when enter button pressed -->
 			<button id="addNote" onclick="addItem()">ADD ITEMS</button>
 			<input type="button" value = "TRASH ITEMS" id="trashCan" onclick="deleteItem()" alt="Trash" title="Delete It"> 
 		</div>

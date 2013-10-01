@@ -111,13 +111,16 @@ h1 {
 	position: absolute;
 	margin-top: 100px;
 	margin-left: -400px;
-}
+ }
 #listItems li{
-	display: block;
 	padding-right: 10px;
 	float: left;
 	clear: left;
 	font: sans-serif;
+	list-style: none;
+}
+#inputDisplay{
+	display: inline-block;
 }
 ol#listItems input{
 	float: left;
@@ -127,6 +130,6 @@ ol#listItems input{
 input[type=checkbox]{
 	text-decoration: none;
 }
-input[type=checkbox]:checked ~ .list {
+input[type=checkbox]:checked ~ #inputDisplay{
    text-decoration: line-through;
 }
